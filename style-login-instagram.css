@@ -9,31 +9,41 @@ body{
     align-items: center;
 }
 .row{
-    margin: 0 auto;
+    margin: 30px auto;
     display: flex;
     align-items: center;
-    max-width: 1000px;
-    width: 100%;
+    justify-content: center;
 }
-.image, .form{
-    flex: 50%;
+
+/* column image */
+.col-image{
+    display: flex;
 }
-.image .bg-ig{
+.col-image .bg-ig{
     position: relative;
-    background-image: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png');
-    width: 450px;
-    height: 590px;
+    background: url('https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png') no-repeat;
+    background-size: 100%;
+    width: 400px;
+    height: 500px;
 }
-.image .bg-ig img{
+.col-image .bg-ig img{
     position: absolute;
-    right: 43px;
-    top: 28px;
+    right: 52px;
+    top: 24px;
+    width: 213px;
 }
-.form{
-    max-width: 350px;
+
+/* column form */
+.col-form{
+    display: flex;
+    justify-content: center;
+}
+.col-form .form-container{
+    max-width: 320px;
     width: 100%;
+    height: 100%;
 }
-.form form{
+.col-form form{
     position: relative;
     background-color: white;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
@@ -42,26 +52,26 @@ body{
     align-items: center;
     padding: 30px 40px;
 }
-.form form input{
+.col-form form input{
     padding: 7px;
 }
-.form form input:first-child{
+.col-form form input:first-child{
     margin-bottom: 5px;
 }
-.form form .withLine{
+.col-form form .withLine{
     position: relative;
     width: 100%;
     margin-top: 1rem;
     text-align: center;
 }
-.form form .withLine p{
+.col-form form .withLine p{
     position: relative;
     background-color: white;
     display: inline;
     z-index: 2;
     padding: 0 5px;
 }
-.form form .withLine::before{
+.col-form form .withLine::before{
     content: '';
     width: 100%;
     height: 1px;
@@ -72,7 +82,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
-.form form button{
+.col-form form button{
     background-color: #0095f6;
     color: white;
     margin-top: 10px;
@@ -80,30 +90,30 @@ body{
     border-radius: 5px;
     border: none;
 }
-.form form input, .form form button{
+.col-form form input, .col-form form button{
     width: 100%;
     box-sizing: border-box;
 }
-.form a{
+.col-form a{
     text-decoration: none;
 }
-.form .signup{
+.col-form .signup{
     margin-top: 10px;
     text-align: center;
     border: 1px solid rgba(var(--b6a,219,219,219),1);
     background-color: white;
 }
 
-.form .get-app .img-store{
+.col-form .get-app .img-store{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
-.form .get-app .img-store img{
+.col-form .get-app .img-store img{
     height: 35px;
 }
 
-.form .get-app{
+.col-form .get-app{
     text-align: center;
 }
